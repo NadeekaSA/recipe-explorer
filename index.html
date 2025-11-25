@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="assets/logo.png" alt="Meal Explorer Logo" class="logo">
+    <h1>TheMealDB – Recipe Explorer</h1>
+</header>
+
+<section class="search-section">
+    <h2>Search Meal by Name</h2>
+    <input type="text" id="searchInput" placeholder="Enter meal name...">
+    <button onclick="searchMeal()">Search</button>
+</section>
+
+<section class="random-section">
+    <h2>Discover a Random Meal</h2>
+    <button onclick="getRandomMeal()">Discover</button>
+</section>
+
+<section class="browse-section">
+    <h2>Browse by Category</h2>
+    <select id="categorySelect"></select>
+
+    <h2>Browse by Area</h2>
+    <select id="areaSelect"></select>
+
+    <h2>Search by Ingredient</h2>
+    <input type="text" id="ingredientInput" placeholder="e.g., chicken">
+    <button onclick="searchByIngredient()">Search</button>
+</section>
+
+<section>
+    <h2>Meal Results</h2>
+    <div id="mealContainer" class="meal-grid"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

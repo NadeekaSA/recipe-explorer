@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+header {
+    background: linear-gradient(135deg, #ff7043, #ff5722);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 100px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background: #ff7043;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e85d32;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.meal-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px #ccc;
+    cursor: pointer;
+}
+
+.meal-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-container {
+    padding: 20px;
+}
+
+.back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
